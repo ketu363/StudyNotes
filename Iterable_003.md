@@ -24,6 +24,9 @@
 
 ---
 
+
+
+
 ## 🔁 What Does "Iterate" Mean?
 
 * To **iterate** means to **go through items one by one** in a collection.
@@ -611,5 +614,51 @@ See you in the next one. 👋✨
 
 
 
-  
+
+#### 🖼️ **Exercise: Drawing an ASCII Image from a 2D List**
+
+**Goal:** Simulate a graphical pixel-based image using `*` for pixels (`1`) and space (` `) for blanks (`0`).
+
+##### ✅ Steps to Build:
+
+1. **Understand the structure** – a 2D list representing an image:
+
+   ```python
+   picture = [
+       [0,0,1,0,0],
+       [0,1,1,1,0],
+       [1,1,1,1,1],
+       [0,1,1,1,0],
+       [0,0,1,0,0],
+   ]
+   ```
+
+2. **Nested loop to iterate through rows and pixels:**
+
+   ```python
+   for row in picture:
+       for pixel in row:
+           if pixel == 1:
+               print("*", end="")
+           else:
+               print(" ", end="")
+       print()  # Print a newline at the end of each row
+   ```
+
+3. **Important Tip:**
+
+   * Use `print(..., end="")` to avoid a newline after every character.
+   * Use `print()` to move to the next row after each inner loop.
+
+##### 🎄 Output Example (ASCII Art):
+
+```
+  *  
+ *** 
+*****
+ *** 
+  *  
+```
+
+---
 
